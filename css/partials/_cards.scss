@@ -1,0 +1,113 @@
+@import "./variables";
+@import "./media-queries";
+
+
+.container-fluid{
+    width: 100%;
+    background-color: $fondo;
+}
+.row.row-grid [class*="col-"] + [class*="col-"] {
+    margin-top: 15px;
+    @include tablet{
+        margin-top: 0;
+    }
+    @include phone{
+        margin-top: 0;
+    }
+}
+.tarjetitas{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+    .item1{
+        background-color: #000; 
+        color: $primario;       
+    }       
+    .item2{
+        background-color: #000; 
+        color: $primario;       
+    }       
+    .item3{
+        background-color: #000; 
+        color: $primario;       
+    }
+    .item1:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        background-color: $tono1;
+        border: 1px solid #000;
+        transition: all 0.5s ease-in-out;
+        color: #000;        
+    }
+    .item2:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        background-color: $tono2;
+        border: 1px solid #000;
+        transition: all 0.5s ease-in-out;
+        color: #000;        
+    }
+    .item3:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        background-color: $tono3;
+        border: 1px solid #000;
+        transition: all 0.5s ease-in-out;
+        color: $primario;        
+    }
+    .icono-card{
+        font-size: 100px;
+        margin-top: 5px;
+    }
+    h4{
+        text-align: center;
+        font-size: 46px;
+        font-family: $fontroboto;
+    }
+    .card-text{
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        text-transform: none;
+        text-align: start;
+        line-height: 55px;
+        margin-top: -20px;
+        margin-left: 25px;
+        padding: 0;
+        list-style-position: inside;
+        li{
+            text-align: start;
+        }
+    }
+    .card-boton{
+        background-color: $secundario;
+        border: 1px solid white;
+    }        
+    .card-boton:hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        background-color: $primario;
+        color: #000;
+        border: 1px solid #000000b4;        
+    }
+}
+
+@media (min-width: 1200px){  
+
+    .item1{
+        max-width: 400px;
+    }
+    .item2{
+        max-width: 400px;
+    }
+    .item3{
+        max-width: 400px;
+    }
+    .tarjetitas{
+        max-width: 1900px;
+        flex-direction: row;
+        gap: 6rem;   
+    }
+    .row.row-grid [class*="col-lg-"] + [class*="col-lg-"] {
+        margin-top: 0;
+    }
+}

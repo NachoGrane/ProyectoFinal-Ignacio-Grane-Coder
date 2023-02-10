@@ -1,0 +1,89 @@
+@import "./variables";
+@import "./media-queries";
+
+.formulario{
+    height: 750px;
+    width: 100%;
+    background-color: $fondo;
+    @include desktop-min{
+        height: 850px;
+    }
+    .form-title{
+        background-color: $fondo;
+        color: $secundario;
+        text-align: center;
+        font-size: 46px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .form-box{
+        max-width: 800px;
+        width: 100%;
+        background: $primario;
+        margin: 20px auto;
+        padding: 30px;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+        @include desktop-min{
+            max-width: 900px;
+        }
+        @include phone{
+            max-width: 500px;
+            width: 100%; 
+        }
+        .form{
+            width: 100%;
+            font-family: $fontroboto;
+            .input_field{
+                margin-bottom: 15px;
+                display: flex;
+                align-items: center;
+                label{
+                    width: 200px;
+                    color: $txt-grey;
+                    margin-right: 10px;
+                    font-size: 18px;
+                }
+                .input{
+                        width: 100%;
+                        outline: none;
+                        border: 1px solid #d4dbd9;
+                        font-size: 18px;
+                        padding: 8px 10px;
+                        border-radius: 3px;
+                        transition: all 0.3s ease;
+                }
+                .textarea{
+                        width: 100%;
+                        outline: none;
+                        border: 1px solid #d4dbd9;
+                        font-size: 18px;
+                        padding: 8px 10px;
+                        border-radius: 3px;
+                        transition: all 0.3s ease;
+                        resize: none;
+                        height: 175px;
+                } 
+                .input:focus,.textarea:focus{
+                    border: 1px solid #fec107;    
+                }
+                .btn{
+                    width: 100%;
+                    padding: 8px 10px;
+                    font-size: 18px;
+                    border: 0;
+                    background: $tono1;
+                    color: #000;
+                    cursor: pointer;
+                    border-radius: 3px;
+                    outline: none;
+                }
+                .btn:hover{
+                    background: $tono2;
+                }
+                :last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+

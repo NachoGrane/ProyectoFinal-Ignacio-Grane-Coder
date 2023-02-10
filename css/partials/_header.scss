@@ -1,0 +1,56 @@
+@import "./variables";
+@import "./media-queries";
+
+header{
+    .navbar {
+    color: $primario;
+    
+    .logo{
+        @include txt-grey();
+        font-size: 32px;
+        font-weight: bold;    
+        text-transform: uppercase;
+        font-family: $fontroboto;
+    }
+
+    .navbar-toggler{
+        background-color: #000;
+    }
+
+    .navbar-nav{
+        margin-right: 100px;  
+        background-color: none;
+        @include phone{
+            width: 50%;
+        }    
+            .nav-item{
+                font-size: 0.8rem;
+                margin-right: 10px;
+                
+                a{
+                color: $txt-grey;
+                font-size: 20px;
+                text-transform: uppercase;
+                border-bottom: 1px solid rgba($color: #e63946, $alpha: 1.0);
+                border-bottom-width: thick;
+                border-bottom-left-radius: 5px 5px;
+                border-bottom-right-radius: 1.5px 1.5px;
+                border-width: 3px;
+                }                
+                a:hover{
+                    color: rgb(0, 0, 0);                
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

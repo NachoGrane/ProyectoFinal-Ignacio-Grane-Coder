@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,100&display=swap');
+
+$fontroboto: 'Roboto', sans-serif;
+
+$primario: #F1FAEE;
+$secundario: #E63946;
+$tono1: #A8DADC;
+$tono2: #457B9D;
+$tono3: #1D3557;
+$txt-grey: #4F4F4F;
+$fondo: #2D2D2D;
+$txt-gradient: linear-gradient(to right, #1F1F1F, #1F1F1F 50%);
+$black: #0000;
+
+@mixin txt-grey{
+    background-color: red;
+    background-image: linear-gradient(to right, #1f1f1f 50%, #1F1F1F 100%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+            background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+

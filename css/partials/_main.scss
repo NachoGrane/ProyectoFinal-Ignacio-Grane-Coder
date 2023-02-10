@@ -1,0 +1,68 @@
+@import "./variables";
+@import "./media-queries";
+
+main{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../imagenes/Main.jpg);
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    .card-middle{
+        width: 400px;
+        background: rgba(217, 217, 217, 0.81);
+        border-radius: 15px;
+        text-align: center;
+        @include desktop-min{
+            width: 800px;
+        }
+    }
+    .main-recording{
+        height: 100vh;
+        width: 100%;
+        background-image: url(../imagenes/Recording\ 1.jpg);
+        background-size: cover;
+        font-family: 'Roboto', sans-serif;        
+    }
+    .main-mixing{
+        height: 100vh;
+        width: 100%;
+        background-image: url(../imagenes/Mixing.jpg);
+        background-size: cover;
+        font-family: 'Roboto', sans-serif;               
+    }
+    .main-mastering{
+        height: 100vh;
+        width: 100%;
+        background-image: url(../imagenes/Mastering.jpg);
+        background-size: cover;
+        font-family: 'Roboto', sans-serif;       
+    } 
+    .card-middle-mixing{
+        width: 400px;
+        background: rgba(217, 217, 217, 0.81);
+        border-radius: 15px;
+        text-align: center;
+        @include desktop-min{
+            width: 650px;
+        }
+        .card-title-mixing{
+            font-size: 24px;
+            @include desktop-min{
+                font-size: 36px;
+            }
+        }
+    }  
+    .middle-boton{
+        a{
+            color: #000;
+        }
+    }
+    .middle-boton :hover{
+        color: #000000;
+        border: 2px dashed #ebd82c;
+    }
+}
+
+
+
+
